@@ -5,7 +5,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // Para el template del HTML que va a usar Webpack
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Para reducir los CSS
 const { SourceMapDevToolPlugin } = require('webpack'); // Para conocer el Source Map de nuestro proyecto
-const ESLintWebpackPlugin = require('eslint-webpack-plugin');
+// const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 
 // Configuraciones del puerto
 const port = process.env.PORT || 3000;
@@ -78,11 +78,13 @@ module.exports = {
                 filename: '[file].map',
             },
         ),
+        /*
         new ESLintWebpackPlugin(
             {
                 extensions: ['js', 'jsx'],
             },
         ),
+        */
     ],
     resolve: {
         extensions: ['.js', '.jsx', '.css', '.scss', '.sass'],
