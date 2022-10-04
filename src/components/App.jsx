@@ -1,4 +1,6 @@
 import React from 'react';
+import TaskListComponent from './containers/task_list';
+import '../styles/App.css';
 
 /**
  * Función Anónima para crear un Componente principal
@@ -6,8 +8,8 @@ import React from 'react';
  */
 const App = () => {
     return (
-      <div>
-        <h1>Proyecto Final</h1>
+      <div className="App">
+        <TaskListComponent />
       </div>
     );
 };
